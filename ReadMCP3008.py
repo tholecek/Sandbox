@@ -1,10 +1,10 @@
-#import spidev
+import spidev
 
-#spi = spidev.SpiDev()
-#spi.open(0, 0)
-#spi.max_speed_hz = 500000
-#spi.mode = 0b11
-print("I'm Here")
+spi = spidev.SpiDev()
+spi.open(0, 0)
+spi.max_speed_hz = 500000
+spi.mode = 0b11
+
 
 def Read1Chan(n):
     # read SPI data from the MCP3008, 8 channels in total
@@ -16,8 +16,4 @@ def Read1Chan(n):
 
 def Aread (channel):
     output = Read1Chan(channel)
-    return output
-
-def Test (channel):
-    output = 1.0
     return output
