@@ -24,3 +24,5 @@ while True:
     print ("---------------------------------------")
     print("LDR Value: %d" % ldr_value)
     time.sleep(delay)
+
+delay = 0.2
